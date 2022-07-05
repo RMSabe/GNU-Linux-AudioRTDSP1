@@ -8,3 +8,5 @@ This code requires the ALSA build resources to run. Run command "sudo apt instal
 Note that, when compiling the code, two used resources must be explicitly mentioned on the command line:
 -lpthread
 -lasound
+
+Author: Rafael Sabe
