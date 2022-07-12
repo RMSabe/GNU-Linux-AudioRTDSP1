@@ -10,3 +10,4 @@ Note that, when compiling the code, two used resources must be explicitly mentio
 -lasound
 
 Author: Rafael Sabe
+Email: rafaelmsabe@gmail.com
