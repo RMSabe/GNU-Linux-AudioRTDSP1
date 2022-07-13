@@ -290,19 +290,13 @@ void buffer_malloc(void)
   buffer_output_3 = (short*) malloc(BUFFER_SIZE_BYTES);
   buffer_dsp = (short*) malloc(BUFFER_SIZE_BYTES);
   
-  unsigned int n = 0;
-  while(n < BUFFER_SIZE)
-  {
-    buffer_input_0[n] = 0;
-    buffer_input_1[n] = 0;
-    buffer_output_0[n] = 0;
-    buffer_output_1[n] = 0;
-    buffer_output_2[n] = 0;
-    buffer_output_3[n] = 0;
-    buffer_dsp[n] = 0;
-    
-    n++;
-  }
+  memset(buffer_input_0, 0, BUFFER_SIZE_BYTES);
+  memset(buffer_input_1, 0, BUFFER_SIZE_BYTES);
+  memset(buffer_output_0, 0, BUFFER_SIZE_BYTES);
+  memset(buffer_output_1, 0, BUFFER_SIZE_BYTES);
+  memset(buffer_output_2, 0, BUFFER_SIZE_BYTES);
+  memset(buffer_output_3, 0, BUFFER_SIZE_BYTES);
+  memset(buffer_dsp, 0, BUFFER_SIZE_BYTES);
   
   return;
 }
